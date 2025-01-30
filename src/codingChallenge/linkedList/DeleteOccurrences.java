@@ -1,4 +1,4 @@
-package coidingChallenge.linkedList;
+package codingChallenge.linkedList;
 
 public class DeleteOccurrences {
 

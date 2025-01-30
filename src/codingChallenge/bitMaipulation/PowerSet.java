@@ -1,4 +1,4 @@
-package coidingChallenge.bitMaipulation;
+package codingChallenge.bitMaipulation;
 
 import java.util.ArrayList;
 import java.util.List;

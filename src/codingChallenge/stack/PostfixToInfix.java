@@ -1,4 +1,4 @@
-package coidingChallenge.stack;
+package codingChallenge.stack;
 
 import java.util.Scanner;
 import java.util.Stack;

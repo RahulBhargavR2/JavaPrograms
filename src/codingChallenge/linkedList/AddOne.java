@@ -1,4 +1,4 @@
-package coidingChallenge.linkedList;
+package codingChallenge.linkedList;
 
 public class AddOne {
     static class Node {

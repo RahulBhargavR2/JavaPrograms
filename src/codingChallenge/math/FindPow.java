@@ -1,4 +1,4 @@
-package coidingChallenge.math;
+package codingChallenge.math;
 
 public class FindPow {
     public double myPow(double x, int n) {

@@ -1,4 +1,4 @@
-package coidingChallenge.bitMaipulation;
+package codingChallenge.bitMaipulation;
 
 import java.util.HashMap;
 import java.util.Map;

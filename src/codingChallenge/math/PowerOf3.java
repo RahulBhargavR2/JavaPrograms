@@ -1,4 +1,4 @@
-package coidingChallenge.math;
+package codingChallenge.math;
 
 public class PowerOf3 {
     private static boolean isPowerOf3(int n) {

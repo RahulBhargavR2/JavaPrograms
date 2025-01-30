@@ -1,4 +1,4 @@
-package coidingChallenge.bitMaipulation;
+package codingChallenge.bitMaipulation;
 
 public class MinimumFlips {
 

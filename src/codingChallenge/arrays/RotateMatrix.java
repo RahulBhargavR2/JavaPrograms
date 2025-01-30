@@ -1,4 +1,4 @@
-package coidingChallenge.arrays;
+package codingChallenge.arrays;
 
 public class RotateMatrix {
     private static void print(int[][]arr){
