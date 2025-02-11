@@ -50,6 +50,21 @@ public class NextGreaterElement {
         return a;
     }
 
+    // provides position
+    private static int[] nextGreater4(int[] arr, Map<Integer,Integer>map){
+        Stack<Integer> st = new Stack<>();
+        for (int i =0;i<arr.length; i++) {
+            while (!st.isEmpty() && arr[st.peek()] < arr[i])
+                map.put(arr[st.pop()], i);
+            st.push(i);
+        }
+        int[] temp = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            temp[i] = map.getOrDefault(arr[i], -1);
+        }
+        return temp;
+    }
+
     public static void main(String[] args) {
         int[] query = {3, 4, 2, 7, 5, 8, 10, 6};
         int[] arr = {1, 0, 2, 0, 0};

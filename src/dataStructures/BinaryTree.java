@@ -172,8 +172,6 @@ public class BinaryTree {
 
     public static void main(String[] args) {
         Stack<Integer> st = new Stack<>();
-
-
         int[] arr = {25, 15, 50, 10, 22, 35, 70, 4, 12, 18, 24, 31, 44, 66, 90};
         BinaryTree tree = new BinaryTree();
         Node root = null;

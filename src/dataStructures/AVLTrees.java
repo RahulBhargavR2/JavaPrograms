@@ -3,13 +3,16 @@ package dataStructures;
 public class AVLTrees {
     // Node class to define the structure of the tree node
     static class Node {
-        int data, height;
-        Node right, left;
+        int data;
+        int height;
+        Node right;
+        Node left;
 
         Node(int data) {
             this.data = data;
             this.height = 1;
-            this.right = this.left = null;
+            this.right = null;
+            this.left = null;
         }
     }
 

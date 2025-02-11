@@ -1,5 +1,7 @@
 package rahul;
 
+import java.util.*;
+
 public class Checking {
 
 
@@ -50,5 +52,17 @@ public class Checking {
     }
 
     public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder();
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        while(n-->0){
+            int one = scan.nextInt();
+            int two = scan.nextInt();
+            sb.append("1".repeat( one / 2));
+            sb.append("2".repeat(two));
+            sb.append("1".repeat( one / 2));
+            System.out.println(sb);
+        }
+
     }
 }
