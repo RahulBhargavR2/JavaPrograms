@@ -52,16 +52,24 @@ public class Checking {
     }
 
     public static void main(String[] args) {
-        StringBuilder sb = new StringBuilder();
+        // your code goes here
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-        while(n-->0){
-            int one = scan.nextInt();
-            int two = scan.nextInt();
-            sb.append("1".repeat( one / 2));
-            sb.append("2".repeat(two));
-            sb.append("1".repeat( one / 2));
-            System.out.println(sb);
+        while(n-->0) {
+            int size = scan.nextInt();
+            Map<Integer, Integer> map = new HashMap<>();
+            for (int i = 0; i < size; i++) {
+                map.merge(scan.nextInt(), 1, Integer::sum);
+            }
+            int count = 0;
+            for (int i : map.keySet()) {
+                if (i == 0)
+                    continue;
+                if (map.get(i) == 1)
+                    count++;
+//                else map.merge(0, 1, Integer::sum);
+            }
+            System.out.println(map.containsKey(0) ? count + 1 : count);
         }
 
     }

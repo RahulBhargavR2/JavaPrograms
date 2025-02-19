@@ -56,7 +56,7 @@ public class MinHeap {
 
     private void increaseKey(int i, int value) {
         heapArray[i] = value;
-        heapify(i);
+        minHeapify(i);
     }
 
     private void changeValue(int i, int value) {
@@ -81,7 +81,7 @@ public class MinHeap {
         }
         int data = heapArray[0];
         heapArray[0] = heapArray[--currentHeapSize];
-        heapify(0);
+        minHeapify(0);
         return data;
     }
 
