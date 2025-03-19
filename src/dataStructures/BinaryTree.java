@@ -179,6 +179,7 @@ public class BinaryTree {
         for (int j : arr) {
             root = tree.add(root, j);
         }
+        tree.getAllPaths(root,st);
 //        tree.levelOrderTraversal(root);
 
 

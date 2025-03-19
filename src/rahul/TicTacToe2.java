@@ -40,8 +40,8 @@ public class TicTacToe2 {
                 pos = optional.orElse(-1);
             }
         }
-        pos--;
-        arr[pos / boardSize][pos % boardSize] = ' ';
+//        pos--;
+        arr[pos / boardSize][pos % boardSize ] = ' ';
     }
 
     private static int[] getPos(int pos) {

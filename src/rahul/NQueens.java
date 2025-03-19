@@ -32,12 +32,14 @@ public class NQueens {
     }
 
     private static boolean queens(int col) {
-        if (col >= board.length) return true;
+        if (col >= board.length)
+            return true;
         for (int i = 0; i < board.length; i++) {
             if (isSafe(i, col)) {
                 board[i][col] = 1;
 
-                if (queens(col + 1)) return true;
+                if (queens(col + 1))
+                    return true;
                 board[i][col] = 0;
             }
         }

@@ -5,16 +5,18 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Stack;
 
-class Interval {
-    int start, end;
-
-    public Interval(int start, int end) {
-        this.start = start;
-        this.end = end;
-    }
-}
 
 public class MergeIntervals {
+    static class Interval {
+        int start, end;
+
+        public Interval(int start, int end) {
+            this.start = start;
+            this.end = end;
+        }
+
+    }
+
     private static void mergeInterval1(Interval[] arr) {
         if (arr.length == 0) return;
         Stack<Interval> intervals = new Stack<>();
@@ -35,7 +37,8 @@ public class MergeIntervals {
         for (int i = 1; i < arr.length; i++) {
             Interval top = intervals.peek();
 
-            if (top.end < arr[i].start) intervals.push(arr[i]);
+            if (top.end < arr[i].start)
+                intervals.push(arr[i]);
             else if (top.end < arr[i].end) {
                 top.end = arr[i].end;
                 intervals.pop();
@@ -51,10 +54,12 @@ public class MergeIntervals {
 
     public static void main(String[] args) {
         List<Interval> intervals = List.of(
-                new Interval(6, 8),
-                new Interval(1, 2),
-                new Interval(3, 4),
-                new Interval(4, 7)
+//                new Interval(6, 8),
+//                new Interval(1, 2),
+//                new Interval(3, 4),
+//                new Interval(4, 7)
+                new Interval(1,4),
+                new Interval(3,6)
         );
         Interval[] arr = intervals.toArray(new Interval[0]);
 

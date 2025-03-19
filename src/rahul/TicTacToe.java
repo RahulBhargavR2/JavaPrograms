@@ -49,10 +49,10 @@ public class TicTacToe {
         int size = arr.length;
         int rc = 0, cc = 0, rd = 0, ld = 0;
         for (int i = 0; i < size; i++) {
-            if (arr[row][i].equals(player)) rc++;
-            if (arr[i][col].equals(player)) cc++;
-            if (arr[i][i].equals(player)) rd++;
-            if (arr[i][size - 1 - i].equals(player)) ld++;
+            if (arr[row][i].equals(player)) rc++;// row column , downwards
+            if (arr[i][col].equals(player)) cc++;//column  column, from left to right
+            if (arr[i][i].equals(player)) rd++;//right diagonal
+            if (arr[i][size - 1 - i].equals(player)) ld++;//left diagonal
         }
         if (rc == size || cc == size || ld == size || rd == size) {
             System.out.println("Player " + player + " is winner");
@@ -75,6 +75,5 @@ public class TicTacToe {
         } while (noOfPlays < 9);
         System.out.println("Game ended as tie");
 //        Integer.bitCount();
-
     }
 }

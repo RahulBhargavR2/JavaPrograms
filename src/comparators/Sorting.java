@@ -50,6 +50,6 @@ class StudentClass implements Comparable<StudentClass>{
                return Integer.compare(o.id,this.id);
            else return this.name.compareTo(o.name);
        }
-       else return Float.compare(o.cgpa,this.cgpa);
+       return Float.compare(o.cgpa,this.cgpa);
     }
 }

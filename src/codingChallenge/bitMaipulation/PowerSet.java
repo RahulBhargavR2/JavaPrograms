@@ -5,7 +5,7 @@ import java.util.List;
 
 public class PowerSet {
 
-    //    using bitwise methods ,
+//    using bitwise methods ,
 //    when the size of array is n then the number of possible subsets are 2 ^ n,
 //    which is same as no of elements that can be generated for a no of bits n,
 //    ie if the size is 4 then 2 ^ 4 numbers can be generated , each number will have unique bit pattern
@@ -29,8 +29,6 @@ public class PowerSet {
     }
 
     // using recursion
-
-
     public static void main(String[] args) {
 
     }
