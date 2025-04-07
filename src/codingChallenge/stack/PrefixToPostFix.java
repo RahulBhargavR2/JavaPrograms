@@ -16,11 +16,11 @@ public class PrefixToPostFix {
     static String preToPost(String s) {
         // code here
         Stack<String> st = new Stack<>();
-        for(int i = s.length()-1; i >=0;i--){
+        for (int i = s.length() - 1; i >= 0; i--) {
             char ch = s.charAt(i);
-            if(Character.isLetterOrDigit(ch))
-                st.push(ch+"");
-            else{
+            if (Character.isLetterOrDigit(ch))
+                st.push(ch + "");
+            else {
                 String op1 = st.pop();
                 String op2 = st.pop();
                 StringBuilder sb = new StringBuilder();

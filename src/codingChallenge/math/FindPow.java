@@ -1,7 +1,7 @@
 package codingChallenge.math;
 
 public class FindPow {
-    public double myPow(double x, int n) {
+    public static double myPow(double x, int n) {
         boolean isNegative = false;
         if (n < 0) {
             n = -n;
@@ -19,6 +19,6 @@ public class FindPow {
     }
 
     public static void main(String[] args) {
-
+        System.out.println(myPow(5,Integer.MAX_VALUE));
     }
 }

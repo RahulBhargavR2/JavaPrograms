@@ -7,10 +7,8 @@ public class Kadanes {
         int sum = 0, max = 0;
         int n = arr.length, j = 0, k = 0;
         for (int i = 0; i < n; i++) {
-
             sum += arr[i];
 //            k++;
-
             if (sum > max) {
                 max = sum;
                 k = i;
