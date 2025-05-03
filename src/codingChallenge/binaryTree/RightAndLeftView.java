@@ -1,4 +1,4 @@
-package codingChallenge.arrays;
+package codingChallenge.binaryTree;
 
 import java.util.LinkedList;
 import java.util.List;
